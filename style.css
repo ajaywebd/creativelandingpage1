@@ -2,4 +2,564 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/* ============> ustility classes <============== */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* ===============> header style start <=================  */
+.header {
+  width: 100%;
+  background: #daac00;
+}
+/* ===========> main navigation bar <============= */
+/* ===========> logo style <============= */
+
+.header .nav .logo img {
+  width: 150px;
+}
+/* ===========>  style <============= */
+.header .nav {
+  height: 80px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .nav .menu-items {
+  display: flex;
+}
+.header .nav .menu-items li {
+  list-style: none;
+}
+.header .nav .menu-items li a {
+  margin: 0 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+/* ===========> Search-container <============= */
+.header .nav .search-container {
+  box-sizing: border-box;
+}
+.header .nav .search-container input {
+  padding: 10px 20px;
+  width: 200px;
+  margin-right: -5px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background: #fcc302;
+}
+.header .nav .search-container i {
+  padding: 11px 25px 12px 15px;
+  font-size: 16px;
+  background: #00bec9;
+}
+/* ============> section-1 <================ */
+.section-1 {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: #fcc302;
+}
+.section-1 .section-container {
+  display: flex;
+}
+.section-1 .section-container .left {
+  width: 60%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.section-1 .section-container .left h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+.section-1 .section-container .left p {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.section-1 .section-container .left .btn {
+  font-size: 20px;
+  font-weight: 600;
+}
+.section-1 .section-container .left .btn-primary {
+  margin-right: 15px;
+  padding: 18px 25px;
+  background: #00bec9;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.section-1 .section-container .left .btn-secondary {
+  margin-right: 10px;
+  border: 2px solid white;
+  padding: 17px 25px;
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+}
+.section-1 .section-container .right {
+  width: 40%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 .section-container .right img {
+  width: 250px;
+}
+
+/* ============> section-2 <================ */
+
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+.section-2.section-1 .section-container {
+  display: flex;
+}
+.section-2.section-1 .section-container .left {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.section-2.section-1 .section-container .left h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: black;
+}
+.section-2.section-1 .section-container .left p {
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.section-2.section-1 .section-container .left .btn {
+  font-size: 20px;
+  font-weight: 600;
+}
+.section-2.section-1 .section-container .left .btn-primary {
+  margin-right: 15px;
+  padding: 18px 25px;
+  background: #00bec9;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.section-2.section-1 .section-container .left .btn-secondary {
+  margin-right: 10px;
+  border: 2px solid white;
+  padding: 17px 25px;
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+}
+.section-2.section-1 .section-container .right {
+  order: 1;
+  width: 50%;
+  position: relative;
+}
+.section-2.section-1 .section-container .right .img-bg-container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #daac00;
+  z-index: 5;
+}
+.section-2.section-1 .section-container .right .img-bg-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.4;
+}
+.section-2.section-1 .section-container .right .img-attach-box {
+  height: 200px;
+  width: 200px;
+  background: #fcc302;
+  position: absolute;
+  left: 35px;
+  bottom: 0px;
+}
+
+/* ============> section-3 <================ */
+.section-3 {
+  background: #fcc302;
+  height: 130vh;
+  padding: 40px;
+}
+.section-3 .section-container {
+  height: 130vh;
+}
+.section-3 .section-container h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-3 .section-container p {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-3 .section-container .card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.section-3 .section-container .card-container .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.section-3 .section-container .card-container .card h3 {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  margin: 20px 0 30px;
+  text-align: center;
+}
+.section-3 .section-container .card-container .card img {
+  width: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+/* ============> section-4 <================ */
+.section-4.section-1 {
+  background: white;
+  height: 100vh;
+}
+.section-4.section-1 .section-container .left {
+  order: 2;
+  height: 100vh;
+  text-align: end;
+  width: 50%;
+}
+.section-4.section-1 .section-container .right {
+  height: 100vh;
+}
+.section-4.section-1 .section-container .left h1 {
+  color: black;
+}
+.section-4.section-1 .section-container .left p {
+  color: black;
+}
+.section-4.section-1 .section-container .right {
+  order: 1;
+  width: 50%;
+  position: relative;
+}
+.section-4.section-1 .section-container .right .img-bg-container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #daac00;
+  z-index: 5;
+}
+.section-4.section-1 .section-container .right .img-bg-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.4;
+}
+.section-4.section-1 .section-container .right .img-attach-box {
+  height: 200px;
+  width: 200px;
+  background: #fcc302;
+  position: absolute;
+  right: 35px;
+  bottom: 40px;
+}
+
+/* ============> section-5 <================ */
+.section-5.section-3 .section-container .card-container .card span {
+  font-size: 30px;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  margin: 15px 0 20px;
+}
+.section-5.section-3 .section-container .card-container .card .btn {
+  padding: 12px 45px 18px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  border-radius: 40px;
+  border: none;
+  background: #00bec9;
+}
+/* =====================> section-6 <==================== */
+.section-6.section-3 {
+  background: #fff;
+  height: 130vh;
+  padding: 40px;
+}
+.section-3 .section-container {
+  height: 130vh;
+}
+.section-6.section-3 .section-container h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-6.section-3 .section-container p {
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-6.section-3 .section-container .card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.section-6.section-3 .section-container .card-container .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.section-6.section-3 .section-container .card-container .card h3 {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+.section-6.section-3 .section-container .card-container .card p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.section-6.section-3
+  .section-container
+  .card-container
+  .card
+  .icon-container
+  i {
+  margin: 0 10px;
+  font-size: 30px;
+  color: #daac00;
+}
+
+/* =====================> section-7 <==================== */
+.section-7 {
+  background: #fcc302;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.section-7 .section-container .img {
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.section-7 .section-container .icon-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  gap: 30px;
+  z-index: 99;
+  align-items: center;
+}
+
+.section-7 .section-container .icon-container .img-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.section-7 .section-container .icon-container .img-container p {
+  margin: 20px 0;
+  color: white;
+  font-weight: 600;
+  font-size: 35px;
+}
+.section-7 .section-container .icon-container .img-container h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+/* =====================> section-8 <==================== */
+.section-8.section-3 {
+  background: #fff;
+  height: 130vh;
+  margin: 0 0 50px;
+}
+.section-8.section-3 .section-container {
+  height: 130vh;
+}
+.section-8.section-3 .section-container h2 {
+  font-size: 65px;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-8.section-3 .section-container p {
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-8.section-3 .section-container .card-container {
+  display: flex;
+  justify-content: space-around;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-8.section-3 .section-container .card-container .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  width: 300px;
+}
+.section-8.section-3 .section-container .card-container .card h3 {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.section-8.section-3 .section-container .card-container .card h4 {
+  color: #00bec9;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.section-8.section-3 .section-container .card-container .card p {
+  text-align: start;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.section-8.section-3 .section-container .card-container .card a {
+  text-align: start;
+  text-decoration: none;
+  font-size: 20px;
+  color: #00bec9;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-8.section-3 .section-container .card-container .card img {
+  width: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+/* ==================> footer style <================ */
+
+.footer {
+  height: 60vh;
+  background: rgb(62, 62, 63);
+}
+.footer .section-container {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+.footer .section-container .footer-list li {
+  list-style: none;
+}
+.footer .section-container .footer-list h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer .section-container .footer-list p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 30px;
+  text-align: end;
+}
+
+.footer .section-container .footer-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+
+  line-height: 1.2rem;
+}
+.footer .section-container .footer-list .text {
+  margin-bottom: 8px;
+  text-align: end;
+}
+.footer .section-container .footer-list .footer-search-container {
+  margin-bottom: 20px;
+}
+.footer .section-container .footer-list .footer-search-container input {
+  padding: 12px 30px;
+  width: 250px;
+  background-color: #fcc302;
+  outline: none;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+.footer .section-container .footer-list .footer-search-container i {
+  padding: 14px 20px;
+  background-color: #00bec9;
+  font-size: 20px;
+  color: white;
+  margin-left: -5px;
+}
+.footer .section-container .footer-list .icon-container {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.footer .section-container .footer-list .icon-container i {
+  font-size: 30px;
+  color: white;
 }
